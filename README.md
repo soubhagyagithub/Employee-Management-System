@@ -46,9 +46,9 @@ A complete Employee Management System built using the MERN stack with features l
 
 > You can find all screenshots in the `screenshots/` folder.
 
-| Login Page | Employee Addition Form | Employee List | View Employee |
+| Login Page 
 |------------|----------------|----------------|
-| ![Login](./screenshots/screenshot1.png) | ![List](./screenshots/screenshot2.png) | ![View](./screenshots/screenshot3.png) | ![View](./screenshots/screenshot4.png) |
+| ![Login](./screenshots/screenshot1.png) |Employee Addition Form ![List](./screenshots/screenshot2.png) |Employee List ![View](./screenshots/screenshot3.png) | View Employee ![View](./screenshots/screenshot4.png) |
 
 ---
 
@@ -57,23 +57,36 @@ A complete Employee Management System built using the MERN stack with features l
 ### Clone the repo
 
 
-git clone https://github.com/your-username/employee-management-tool.git
+git clone https://github.com/soubhagyagithub/Employee-Management-System.git
 cd employee-management-tool
 ---
 Install dependencies
-For Backend
-  cd server
+    For Backend 
+      cd server
+      npm install
+    For Frontend
+      cd frontend
   npm install
-For Frontend
-  cd frontend
-  npm install
+  
 ---
 Create a .env file inside backend/ with the following:
-  PORT=5000
-  MONGO_URI=your_mongodb_connection_string
-  JWT_SECRET=your_secret_key
+    PORT=5000
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=***********
+    ADMIN_USERNAME=************
+    ADMIN_PASSWORD=************
 
 npm run dev
 Frontend runs on http://localhost:3000
 node server.js
 Backend runs on http://localhost:5000
+
+---
+. Run the Seeder Once
+    You can hit this endpoint after starting the server:
+    Then Username and password will be created and you can use that to Login.
+---
+👤 Admin Access
+Only the admin is allowed to log in and access the employee management dashboard.
+you can login using username: ***********
+                    password: ***********
